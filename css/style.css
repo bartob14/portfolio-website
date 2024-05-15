@@ -79,8 +79,8 @@ p {
 #grid__tr__btn,
 #grid__bl__btn,
 #grid__br__btn {
-  height: 20rem;
-  width: 20rem;
+  height: 18.75rem;
+  width: 18.75rem;
   background: var(--bg);
   color: var(--text);
   border: var(--border);
