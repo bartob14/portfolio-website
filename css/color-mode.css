@@ -1,0 +1,69 @@
+/* LIGHT MODE */
+
+body:after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  
+}
+
+:root {
+  /* Colors */
+  --bg: #121212;
+  --bg-alt: #171717;
+  --bg-alt-2: #171717;
+  --bg-transparent: #111014e8;
+  --border: 0.01rem solid #5a5a5a;
+  --text: #f4efff;
+  --text-alt: #fdfdfda8;
+
+ 
+
+  --sun: url(../assets/icons/moon.png);
+}
+
+/* DARK MODE */
+
+:root.dark-mode {
+  --bg: #0a0a0a;
+  --bg-alt: #3c3d40;
+  --bg-alt-2: #3c3d40;
+  --bg-transparent: #111014e8;
+  --border: 0.01rem solid #5a5a5a;
+  --text: #f7efff;
+
+ 
+  --moon: url(../assets/icons/sun.png);
+}
+
+/* COLOR MODE TOGGLE BUTTON */
+
+#color-mode {
+  background: var(--bg-alt-2);
+  height: 2.75rem;
+  width: 4rem;
+  border-radius: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#toggle-button {
+  background-image: var(--sun);
+  background-size: cover;
+  cursor: none;
+}
+
+.dark-mode #toggle-button {
+  background-image: var(--moon);
+}
+
+.dark-mode #color-mode {
+  justify-content: flex-end;
+}
